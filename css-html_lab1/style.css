@@ -1,0 +1,76 @@
+header {
+  margin: -10px -10px 3px -10px;
+ 
+}
+nav
+{
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+}
+.main
+{
+  size: 100%;
+}
+
+.ul
+{
+    display: flex;
+}
+#i{
+margin-top: 1px;
+    
+max-width: 100%;
+}
+.ul li {
+  padding: 10px;
+
+  list-style-type: none;
+}
+.ul li a {
+  text-decoration: none;
+  color: white;
+}
+.div0
+{
+  display: flex;
+}
+.div{
+  width: 45%;
+  padding: 20px;
+}
+
+
+.div3 {
+  margin: 20px auto;
+}
+
+.div9 {
+  border: #e1ede8 solid;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  background-color: #f5f9f8;
+}
+.field {
+  background-color: #e0efe8;
+  border: #abbab5 2px dashed;
+}
+.ft {
+  direction: rtl;
+
+  color: #6d827b;
+  background-color: #dfeee7;
+}
+.last {
+  padding: 10px;
+  width: 40%;
+  margin: auto;
+}
+
+.your_phone label
+{
+  font-size: 10px;
+  color: #6d827b  ;
+}
