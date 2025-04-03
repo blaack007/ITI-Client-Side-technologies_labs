@@ -15,10 +15,8 @@ var speed = document.getElementById("speed");
 var source = document.querySelectorAll("source");
 
 volume.value = video.volume;
-// progress.value = video.currentTime;
 progress.max = video.duration;
 progress.min , progress.value= 0;
-// time.textContent = `${Math.floor(video.currentTime).toFixed(2)} / ${video.duration.toFixed(2)}`;
 
 video.ontimeupdate = function () {
     progress.value = video.currentTime;
@@ -79,6 +77,8 @@ nextOrPrevious = function () {
 next.addEventListener("click", nextOrPrevious);
 
 back.addEventListener("click", nextOrPrevious);
+
+
 
 video.addEventListener("click", function () {
     if (video.paused) {
