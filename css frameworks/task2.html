@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label
+        {
+            padding: 10px;
+            width: 100px; 
+            display: inline-block;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <label>red</label>
+        <input type="range" id="red" min="0" max="255" value="0">
+    </div>
+    <div>
+        <label>green</label>
+        <input type="range" id="green" min="0" max="255" value="0">
+    </div>
+    <div>
+        <label>blue</label>
+        <input type="range" id="blue" min="0" max="255" value="0">
+    </div>
+    <h1>change this color</h1>
+    <script>
+        var red = document.getElementById("red");
+        var green = document.getElementById("green");
+        var blue = document.getElementById("blue");
+        var h1 = document.querySelector("h1");
+
+
+        red.addEventListener("change",function(){   
+            h1.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+        })
+        green.addEventListener("change",function(){   
+            h1.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+        })
+        blue.addEventListener("change",function(){   
+            h1.style.color = `rgb(${red.value},${green.value},${blue.value})`;
+        })
+
+    </script>
+</body>
+</html>
